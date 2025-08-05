@@ -3,7 +3,7 @@ function search() {
     const query = input.value;
     
     if (query) {
-        fetch(`http://www.omdbapi.com/?apikey=24a875a1&t=${query}`)
+        fetch(`https://www.omdbapi.com/?apikey=24a875a1&t=${query}`)
             .then(response => response.json())
             .then(data => {
                 if (data.Response === "True") {
@@ -28,7 +28,7 @@ function play(){
     const query = input.value;
     
     if (query) {
-        fetch(`http://www.omdbapi.com/?apikey=24a875a1&t=${query}`)
+        fetch(`https://www.omdbapi.com/?apikey=24a875a1&t=${query}`)
             .then(response => response.json())
             .then(data => {
                 if (data.Response === "True") {
@@ -48,3 +48,4 @@ function play(){
         window.alert("Please enter a movie name.");
     }
 }
+
