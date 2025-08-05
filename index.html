@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Movie Search App</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="app">
+    <h1>🎬 Tfrej A Jmi</h1>
     <div class="container">
-        <input  type="text" placeholder="Entre Movie Name" />
-        <button id="search" onclick="search()" type="submit">search</button>
-        <button id="play" onclick="play()" type="submit">play</button>
+      <input type="text" placeholder="Enter Movie Name" />
+      <button onclick="search()">Search</button>
+      <button onclick="play()">Play</button>
     </div>
-    <img id="image" src="" style="display: none;">
-    <p>start searching</p>
-    <iframe id="video" src="" width="70%" height="500" allowfullscreen style="display: none;"></iframe>
-    
-    <script src="script.js"></script> 
+
+    <img id="image" src="" style="display: none;" />
+    <p>Start searching for a movie above.</p>
+    <iframe id="video" src="" allowfullscreen style="display: none;"></iframe>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
